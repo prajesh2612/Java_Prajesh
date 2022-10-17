@@ -1,8 +1,8 @@
 class Solution {
     public int maximumDifference(int[] nums) {
         int max=0,min=Integer.MAX_VALUE,diff=0,p=0;
-        //int l=nums.length;
-        for(int i=0;i<nums.length;i++)
+        int l=nums.length;
+        for(int i=0;i<l;i++)
         {
             if(min>nums[i])
             {
