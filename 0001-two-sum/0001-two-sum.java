@@ -2,10 +2,6 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
        HashMap<Integer,Integer> hm=new HashMap<>();
         int l=nums.length;
-        for(int i=0;i<l;i++)
-        {
-            hm.put(nums[i],i);
-        }
         int arr[]=new int[2];
         for(int i=0;i<l;i++)
         {
@@ -16,7 +12,16 @@ class Solution {
                 arr[1]=hm.get(diff);
                 break;
             }
+            else
+            {
+                hm.put(nums[i],i);
+            }
         }
+//         int arr[]=new int[2];
+//         for(int i=0;i<l;i++)
+//         {
+            
+//         }
         return arr;
     }
 }
